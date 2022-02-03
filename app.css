@@ -22,18 +22,20 @@
     --poppins: 'Poppins', sans-serif;
 
     /* font-size */
-    --body-size: 1.8rem;
-    --footer-font: 1.2rem;
+    --body-font: 1.8rem;
+    --footer-font: 1.6rem;
     /* border-radius */
     --br: 1.5em;
 
-    /* z-index */
-    --top: 10;
-    --middle: 5;
-    --bottom: 1;
 }
 html{
     font-size: 62.5%;
+}
+body{
+    display: inline-block;
+}
+main{
+    margin-bottom: 20em;
 }
 /* Utilities */
 .flex-class{
@@ -45,12 +47,22 @@ html{
 .space-between{
     justify-content: space-between;
 }
+.align-self{
+    align-self: center; 
+}
+.flex-start{
+    align-self: flex-start;
+}
+.line-height-normal{
+    line-height: 1.6;
+}
 /* section */
 .main__section1{
     background-color: var(--very-pale-cyan);
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
     padding: var(--main-padding);
+    
 }
 .main__section-logo{
     grid-template-areas: 
@@ -89,7 +101,7 @@ h2{
 p{
     font-family: var(--open-sans);
     font-weight: 100;
-    font-size: var(--body-size);
+    font-size: var(--body-font);
 }
 a{
     text-decoration: none;
@@ -102,6 +114,7 @@ button{
     font-size: 1.6rem;
     border: none;
     box-shadow: 1px 1px 15px rgba(0,0,0,.2);
+    cursor: pointer;
 }
 .try_it_free-button{
     margin-left: auto;
@@ -109,10 +122,9 @@ button{
     background-color: white;
 }
 .get_started_for_free-button{
-    background-color:rgb(226, 88, 134);
+    background-color: var(--pink);
     color: white;
     border-radius: 5rem;
-    align-self: flex-start;
     padding: .8em 3em;
 }
 /* cards */
@@ -149,27 +161,25 @@ button{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 7em;
 }
 .call-to-action-section{
     position: absolute;
-    
+    margin-bottom: 5em;
     background-color: white;
     box-shadow: 1px 1px 15px rgba(0,0,0,.2);
     padding: 5em;
     border-radius: var(--br);
     flex-direction: column;
 }
-.call-to-action-section button{
-    align-self: center;
-}
 /* Footer */
 footer{
     font-family: var(--open-sans);
+    font-size: var(--footer-font);
 }
 li{
     list-style: none;
-    line-height: 2;
+    line-height: 3;
+   
 }
 .footer-details{
     background-color: var(--Very-dark-cyan);
@@ -177,19 +187,29 @@ li{
     grid-auto-columns: 1fr;
     color: white;
     padding-top: 10em;
-    top: 100%;
-   
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    font-weight: 500; 
+    gap: 2em;
 }
-.copyright{
-   grid-row: 2/3; 
-   grid-column: 1/span 4;
-   text-align: end;
+.footer-details img{
+    grid-row: 1/2;
+    grid-column: 1/span 4;
 }
 
+.copyright{
+   grid-row: 3/4; 
+   grid-column: 1/span 4;
+   text-align: end;
+   font-size: 1.2rem;
+}
+@media screen and (max-width: 1000px){
+    
+}
 .attribution {
-    margin-top: auto;
-    position: absolute;
-    z-index: 100;
-     font-size: var(--body-size);
-      text-align: center; }
+     font-size: var(--body-font);
+      text-align: center;
+      font-weight: 400;
+    }
 .attribution a { color: hsl(228, 45%, 44%); }
