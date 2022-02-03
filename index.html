@@ -8,7 +8,8 @@
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/app.css"> <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/all.min.css"> <!--Icons css file-->
  
 </head>
 <body>
@@ -18,40 +19,42 @@
         <img src="images/logo.svg" alt="main logo">
         <button class="try_it_free-button">Try It Free</button>
     </div>
-        <div class="main__section-content flex-class space-between">
+        <div class="main__section-content grid-class">
             <div class="main__section-content-div1 flex-class">
                 <h1>Build The Community Your Fans Will Love</h1>
                 <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
                   Create connections with your users as you engage in genuine discussion.</p>
-                <button class ="get_started_for_free-button flex-start">Get Started For Free</button>
+                <button class ="main__get_started_for_free-button get_started_for_free-button">Get Started For Free</button>
             </div>
-              <img class="main__section-content-img"src="images/illustration-mockups.svg" alt="conversation box mock images">
+                <div class="main__section-content-img">
+                  <img src="images/illustration-mockups.svg" alt="conversation box mock images">
+                </div>     
         </div>
   </section>
 
-      <div class="cards">
-              <section class="cards-section flex-class">
+      <div class="cards flex-class">
+              <section class="cards-section grid-class">
                 <div class="cards-section-div1">
                     <h2>Grow Together</h2>
-                    <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+                    <p class="line-height-normal">Generate meaningful discussions with your audience and build a strong, loyal community. 
                       Think of the insightful conversations you miss out on with a feedback form.</p>
                 </div>
                   <img class="card-img" src="images/illustration-grow-together.svg" alt="grow together">
             </section>  
 
-          <section class="cards-section flex-class"> 
+          <section class="cards-section grid-class"> 
             <img class="card-img" src="images/illustration-flowing-conversation.svg" alt="flowing conversations">
                 <div class="cards-section-div1">
                     <h2>Flowing Conversations</h2>
-                    <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                    <p class="line-height-normal">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
                     have just-in-time loading for a more natural flow.</p> 
                 </div>
           </section>
 
-          <section class="cards-section flex-class" >
+          <section class="cards-section grid-class" >
             <div class="cards-section-div1">
                 <h2>Your Users</h2>
-                <p>
+                <p class="line-height-normal">
                   It takes no time at all to integrate Huddle with your app's authentication solution. 
                   This means, once signed in to your app, your users can start chatting immediately.
                 </p>
@@ -74,10 +77,11 @@
     <div class="footer-details grid-class">
           <img src="images/logo-footer.svg" alt="huddle-logo-footer">
           <ul>
-              <li class="line-height-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              <li class="location">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                   incididunt ut labore et dolore magna aliqua</li>
-                <li>+1-543-123-4567</li>
-                <li>example@huddle.com</li>
+                <li class="phone-number">+1-543-123-4567</li>
+                <li class="email">example@huddle.com</li>
           </ul>
           <ul>
               <li><a href="#">About Us</a></li>
@@ -89,6 +93,10 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            
+          </div>
           <div class="copyright">
             &copy; Copyright 2018 Huddle. All rights reserved.
           </div>
