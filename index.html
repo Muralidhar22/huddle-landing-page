@@ -13,14 +13,14 @@
  
 </head>
 <body>
-<main>
+<main> 
   <section class="main__section1">
-    <div class="main__section-logo grid-class">
+    <div class="main__section-logo grid-class space-between">
         <img src="images/logo.svg" alt="main logo">
         <button class="try_it_free-button">Try It Free</button>
     </div>
         <div class="main__section-content grid-class">
-            <div class="main__section-content-div1 flex-class">
+            <div class="main__section-content-div1 flex-class flex-direction-column">
                 <h1>Build The Community Your Fans Will Love</h1>
                 <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
                   Create connections with your users as you engage in genuine discussion.</p>
@@ -68,7 +68,7 @@
  
   <footer>
         <div class="final-card flex-class">
-            <section class="call-to-action-section flex-class">
+            <section class="call-to-action-section flex-class flex-direction-column">
                 <h2>Ready To Build Your Community?</h2>
                 <button class="get_started_for_free-button align-self">Get Started For Free</button>
             </section>
@@ -76,27 +76,31 @@
 
     <div class="footer-details grid-class">
           <img src="images/logo-footer.svg" alt="huddle-logo-footer">
-          <ul>
-              <li class="location">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                  incididunt ut labore et dolore magna aliqua</li>
-                <li class="phone-number">+1-543-123-4567</li>
-                <li class="email">example@huddle.com</li>
-          </ul>
-          <ul>
+            <ul class="grid-class footer-details__contact">
+                  <img src="images/icon-location.svg" alt="location icon">
+                        <li class="location">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                          incididunt ut labore et dolore magna aliqua</li>
+                  <img src="images/icon-phone.svg" alt="phone icon">
+                        <li class="phone-number">+1-543-123-4567</li>
+                  <img src="images/icon-email.svg" alt="email icon">
+                        <li class="email">example@huddle.com</li>
+            </ul>
+          <ul class="flex-class flex-direction-column gap-1em">
               <li><a href="#">About Us</a></li>
               <li><a href="#">What We Do</a></li>
               <li><a href="#">FAQ</a></li>
           </ul>      
-          <ul>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            
-          </div>
+              <ul class="flex-class flex-direction-column gap-1em">
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+                    <div class="social-icons flex-class gap-1em">
+                        <a href=""><i class="fab fa-facebook-f"></i></a> 
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
           <div class="copyright">
             &copy; Copyright 2018 Huddle. All rights reserved.
           </div>
